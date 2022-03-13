@@ -1,22 +1,26 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
+import { Link } from "react-router-dom";
 import "./burger.css";
 
 function Burger() {
   return (
     <Menu>
-      <a className="menu-item" href="/">
+      <Link className="menu-item" to="/login">
+        Login
+      </Link>
+      <Link className="menu-item" to="/">
         Home
-      </a>
-      <a className="menu-item" href="/salads">
+      </Link>
+      <Link className="menu-item" to="/salads">
         Music News
-      </a>
-      <a className="menu-item" href="/pizzas">
+      </Link>
+      <Link className="menu-item" to="/pizzas">
         Discover
-      </a>
-      {/* <a className="menu-item" href="/desserts">
+      </Link>
+      {/* <Link className="menu-item" to="/desserts">
         Desserts
-      </a> */}
+      </Link> */}
     </Menu>
   );
 }
